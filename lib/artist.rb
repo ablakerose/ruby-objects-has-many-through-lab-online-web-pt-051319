@@ -20,9 +20,10 @@ class Artist
   end
 
   def songs
+    Songs.all
     #how we can access all the songs
     #think about the attributes that a song has and how we can use those attributes to find the instances of the song that belongs to self.
-      @songs
+      
   end
 
   def genres
