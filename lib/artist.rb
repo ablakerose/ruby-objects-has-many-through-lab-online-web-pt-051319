@@ -22,9 +22,13 @@ class Artist
   def songs
     #how we can access all the songs
     #think about the attributes that a song has and how we can use those attributes to find the instances of the song that belongs to self.
-    self.songs.collect do |song|
-      song.genre
-    end
+      @songs
   end
 
+  def genres
+     @songs.collect do |song|
+       song.genre
+     end
+   end
+ end
 end
